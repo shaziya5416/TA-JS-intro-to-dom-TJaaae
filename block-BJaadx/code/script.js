@@ -1,14 +1,17 @@
 // 1. Change the title of the page to `Hello AltCampus!`
-
+document.title=`Hello AltCampus`
 // 2. Select the element using the children property:
-
+document.body.children[0]
 //    - Select the `h1` element and change the value to `Learning DOM`
-
+let child=document.body.children[0];
+child="Learning DOM";
 //    - Select the first `li` element inside the `ul` with class `topics` and change the innerText to `all about document`
+let y=document.getElementsByClassName("list")
+y[0].innerText="inputCheckBox"
 //    - Select the input element with name `email`
-
+document.getElementsByName("email")
 // 3. Log the number (using console.log) of children of all the `li` element inside the ul with class `topics`
-
+//
 // 4. Select the first input using the `type` selector and store them in variable named `emailInput`
 
 // 5. Select the ul element using class selector and store in `topics`
