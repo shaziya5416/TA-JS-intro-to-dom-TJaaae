@@ -32,12 +32,11 @@ createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></
 // 3. Create a function named `createList` that accept and array of data like ['Mango', 'Apple', 'Banana'] and returns
 // the html for the link like <ul> <li>Mango</li>  <li>Apple</li>  <li>Banana</li> </ul>
 // Your code goes here
-function createList(value){
-let ul=document.createElement("ul");
-let li=document.createElement("li");
-value.forEach((elm)=>li.innerText=`${elm}`);
-ul.append(li);
-return ul;
+function createList(value=[]){
+
+let html=
+`<ul> ${value.map((elm)=>`<li>${elm}</li>`).join("")}; </ul>`
+return html;
 }
 
 
@@ -58,7 +57,20 @@ createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
 </ul>
 */
 
-// Your code goes here
+// function createToDoList(value=[]){
+
+let html= 
+`<ul>
+ <li>
+ ${value.map((elm)=>
+`<p>${value.name}</p>
+<input type="checkbox" ${value.isDone} name="" id="">
+<span>X</span>`.join("")
+<li>
+</ul>`
+return html;
+}
+
 
 // TEST
 createTodoList([
