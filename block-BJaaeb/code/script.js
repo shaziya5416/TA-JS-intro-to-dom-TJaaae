@@ -7,6 +7,16 @@ default value to be "text" and return the input element inside label. (create it
 
 // Your code goes here
 
+function createInputElm(label,type="text")
+{
+let label1=document.createElement("label");
+let input=document.createElement("input");
+input.setAttribute(`type`,`${type}`);
+label1.innerText=`${label}:`;
+label1.append(input);
+return label1;
+}
+
 // TEST
 createInputElm('Your name'); //<label>Your name: <input type="text"></label>
 createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></label>
@@ -22,6 +32,15 @@ createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></
 // 3. Create a function named `createList` that accept and array of data like ['Mango', 'Apple', 'Banana'] and returns
 // the html for the link like <ul> <li>Mango</li>  <li>Apple</li>  <li>Banana</li> </ul>
 // Your code goes here
+function createList(value){
+let ul=document.createElement("ul");
+let li=document.createElement("li");
+value.forEach((elm)=>li.innerText=`${elm}`);
+ul.append(li);
+return ul;
+}
+
+
 
 // TEST
 createList(['ALABAMA', 'ALASKA', 'HAWAII', 'KENTUCKY']);
