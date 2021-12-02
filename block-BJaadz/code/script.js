@@ -15,33 +15,35 @@ Array.from converts an array kind of data into array so we can use methods like 
 HINT:
 let allHrsArray = Array.from(allHrs)
 */
-let allHRArray=[...allHR]
+let allHRArray=Array.from(allHR)
 
 // Set the border of the all the hr elements to "1px solid tomato"
-allHRArray.forEach(elm=>{elm.style.color="red"})
-
+allHRArray.forEach(elm=>elm.style.border="1px solid tomato");
 // Change the background of all the hr to "antiquewhite" using for of loop.
-
+allHRArray.forEach(elm=>elm.style.backgroundColor="antiquewhite");
 // Change the 'border-radius' of all the hr to "5px" using array.
 
 // Change the alignment of the heading(h1) to center.
 
 // Change the font size of the heading to 3rem.
-
+heading.style.fontSize="3rem";
 // Change the border of hr with class 'image' to `2px solid purple`.
-
+document.querySelector(".image").style.border=`2px solid purple`;
 // Hide the box number 17 (last box).
-
+let box17=document.querySelector(".seventeen");
+box17.style.display="none";
 // Change the border of all the hr element from solid to dashed type
-
+allHR.style.border="dashed";
 // Create a pragraph element and store it in variable named 'para' using `createElement`
+let para=document.createElement("p");
 
 // Change the inner text of para to "querySelector returns an element you can maupulate but querySelectorAll returns the collection of elements in array kind of structure."
-
+para.innerText="querySelector returns an element you can maupulate but querySelectorAll returns the collection of elements in array kind of structure.";
 // Remove all the elements from box 1
-
+let box1=document.querySelector(".two");
+box1.innerHTML="";
 // Replace all the elements inside box 1 with the para (you created above)
-
+box1.append("para");
 /* Walking the DOM
 Do the following after selecting box 16 and storing in variable named box16
 
