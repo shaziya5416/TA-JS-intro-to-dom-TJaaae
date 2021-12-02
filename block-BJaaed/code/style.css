@@ -1,0 +1,44 @@
+html{
+    font-size: 12px;
+}
+.container{
+max-width: 2500px;
+margin: 0 auto;
+padding: 2rem 0;
+
+}
+.header{
+background-color: darkmagenta;
+padding: 1.2rem 0;
+}
+
+h1{
+    font-size: 3rem;
+    color: yellow;
+    text-align: center;
+}
+.main{
+    background-color:yellow;
+    display: flex;
+    flex-wrap: wrap;
+}
+.block{
+    padding: 2rem 2rem;
+width: 30rem;
+height: 35rem;
+background-color: magenta;
+margin: 5rem 5rem;
+}
+.btn{
+    margin-top: 1rem;
+    margin-right: 10rem;
+    font-size: 1rem;
+    border-radius: 10%;
+    background-color: white;
+}
+.img{
+    width: 20rem;
+    height: 20rem;
+    align-items: center;
+    margin: 0 5rem;
+}
